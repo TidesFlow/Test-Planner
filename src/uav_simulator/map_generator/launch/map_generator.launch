@@ -1,0 +1,32 @@
+<launch>
+    <node pkg="map_generator" type="random_forest" name="random_forest" output="screen">
+        <param name="init_state_x" value="-19.0"/>
+        <param name="init_state_y" value="-0.0"/>
+
+        <!-- 地图参数 -->
+        <param name="map/resolution" value="0.1"/>
+        <param name="map/obs_num" value="150"/>
+        <param name="map/x_size" value="40.0"/>
+        <param name="map/y_size" value="20.0"/>
+        <param name="map/circle_num" value="20"/>
+
+        <!-- 障碍物形状参数 -->
+        <param name="ObstacleShape/lower_rad" value="0.3"/>
+        <param name="ObstacleShape/upper_rad" value="0.8"/>
+        <param name="ObstacleShape/lower_hei" value="0.0"/>
+        <param name="ObstacleShape/upper_hei" value="7.0"/>
+
+        <param name="ObstacleShape/a_l" value="0.7"/>
+        <param name="ObstacleShape/a_h" value="1.0"/>
+        <param name="ObstacleShape/b_l" value="0.7"/>
+        <param name="ObstacleShape/b_h" value="1.0"/>
+
+        <param name="ObstacleShape/z_l" value="0"/>
+        <param name="ObstacleShape/z_h" value="8"/>
+        <param name="ObstacleShape/theta_l" value="0.5"/>
+        <param name="ObstacleShape/theta_j" value="1"/>
+
+        <!-- 感知参数 -->
+        <param name="sensing/radius" value="10.0"/>
+    </node>
+</launch>

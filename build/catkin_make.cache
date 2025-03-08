@@ -1,0 +1,2 @@
+uav_simulator/map_generator
+-DCATKIN_DEVEL_PREFIX=/home/kiana/College/Projects/Test-Planner/devel -DCMAKE_INSTALL_PREFIX=/home/kiana/College/Projects/Test-Planner/install -G Unix Makefiles
