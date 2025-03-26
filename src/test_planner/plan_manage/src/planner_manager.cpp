@@ -6,7 +6,7 @@ void PlannerManager::init(ros::NodeHandle &nh)
 }
 
 bool PlannerManager::aStarReplan(Eigen::Vector3d start_pos,Eigen::Vector3d start_vel,Eigen::Vector3d start_acc,
-                    Eigen::Vector3d end_pos,Eigen::Vector3d end_vel)
+                    Eigen::Vector3d end_pos,Eigen::Vector3d end_vel)   
 {
     a_star_planner.reset();
     
@@ -20,3 +20,4 @@ bool PlannerManager::aStarReplan(Eigen::Vector3d start_pos,Eigen::Vector3d start
         }
     }
 }
+

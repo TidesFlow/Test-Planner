@@ -124,6 +124,7 @@
     "typeinfo": "cpp",
     "variant": "cpp",
     "bit": "cpp",
-    "dense": "cpp"
+    "dense": "cpp",
+    "core": "cpp"
   }
 }
